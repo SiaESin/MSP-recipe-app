@@ -1,0 +1,24 @@
+{
+  "name": "msp-recipe-app",
+  "version": "1.0.0",
+  "description": "Milestone project 2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiaESin/MSP-recipe-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SiaESin/MSP-recipe-app/issues"
+  },
+  "homepage": "https://github.com/SiaESin/MSP-recipe-app#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}
