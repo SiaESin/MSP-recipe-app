@@ -1,3 +1,5 @@
 export const Auth = () => {
-    return <div> Auth </div>;
+    return <div className="auth"> Auth </div>;
 }
+
+/*t.s 1:00:00 */
