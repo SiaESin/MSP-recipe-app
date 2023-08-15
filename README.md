@@ -1,10 +1,10 @@
 # MSP-recipe-app
-Milestone project 2
+Milestone project 2:
 Recipe app 
 
 ## Deployment
 
-The web app is deployed at:
+The web app is deployed at: https://github.com/SiaESin/MSP-recipe-app
 
 
 ## Project Description
@@ -20,11 +20,13 @@ MongoDB, Express.js, React, Node.js, Heroku
 
 
 ### Outstanding Bugs
-
+-
+-
+-
 ## Contributors
-Siabhon Sindab
-Marisol Valenzuela
-Juan Hernandez
+Siabhon Sindab,
+Marisol Valenzuela,
+Juan Hernandez,
 Matt Foster
 
 ## Links
