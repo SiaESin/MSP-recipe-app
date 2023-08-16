@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { useGetUserID } from '../hooks/useGetUserID';
 
 export const CreateRecipes = () => {
+    const userID = useGetUserID();
     const [recipe, setRecipe] = useState({
         name: '',
         ingredients: [],
         instructions: '',
         imageUrl: '',
         cookingTime: 0,
-        userOwner: 0,
+        userOwner: userID,
     });
     
     const handleChange = (event) => {
@@ -64,6 +66,7 @@ export const CreateRecipes = () => {
             <textarea
                 id="instructions"
                 name="instructions"
+                onChange={handleChange}
             ></textarea>
             <label htmlFor="imageUrl">Image URL</label>
             <input
