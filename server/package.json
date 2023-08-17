@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "server",
   "version": "1.0.0",
   "main": "index.js",
@@ -13,5 +14,36 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.1",
     "mongoose": "^7.4.3"
+=======
+  "name": "msp-recipe-app",
+  "version": "1.0.0",
+  "description": "Milestone project 2",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SiaESin/MSP-recipe-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/SiaESin/MSP-recipe-app/issues"
+  },
+  "homepage": "https://github.com/SiaESin/MSP-recipe-app#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "method": "^2.0.0",
+    "mongoose": "^7.4.2",
+    "yarn": "^1.22.19"
+>>>>>>> main
   }
 }
