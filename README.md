@@ -22,3 +22,7 @@ Matt Foster
 
 - Links to anything project related
 
+new dependencies 
+axios, bcrypt, jsonwebtoken, yarn 
+program- insomnia 
+react hooks used
