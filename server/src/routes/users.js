@@ -1,7 +1,8 @@
-import express from 'express';
-import jwt from 'jsonwebtoken';
-import bcrypt from 'bcrypt';
-import { UserModel } from '../models/Users.js';
+import express from "express";
+import jwt from "jsonwebtoken";
+import bcrypt from "bcrypt";
+import { UserModel } from "../models/Users.js";
+export { router as userRouter };
 
 const router = express.Router();
 
