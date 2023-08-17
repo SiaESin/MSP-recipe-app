@@ -4,7 +4,7 @@ import { useGetUserID } from '../hooks/useGetUserID';
 
 export const Home = () => {
   const [recipes, setRecipes] = useState([]);
-  const userID = useGetUserID();
+  const [savedRecipes, setSavedRecipes] = useState([]);
   useEffect(() => {
     const fetchRecipe = async () => {
       try {
@@ -14,8 +14,19 @@ export const Home = () => {
         console.error(e);
       }
     };
+    const fetchSavedRecipe = async () => {
+      try {
+        const response = await axios.get(
+          `http://localhost:3001/recipes/savedRecipes/ids/${userID}`, 
+        );
+        setSavedRecipes(response.data.savedRecipes)
+      } catch (e) {
+        console.error(e);
+      }
+    };
 
     fetchRecipe();
+    fetchSavedRecipe();
   }, []);
 
   const saveRecipe = async (recipeID) => {
@@ -25,11 +36,12 @@ export const Home = () => {
         userID,
       });
     //   setSavedRecipes(response.data.savedRecipes);
-    } catch (err) {
-      console.log(err);
+    } catch (e) {
+      console.error(e);
     }
   };
-
+  
+  const isRecipeSaved = (id) => savedRecipes.includes(id);
 
   return <div> <h1> Recipes</h1>
   <ul>
@@ -37,7 +49,11 @@ export const Home = () => {
         <li key={recipe._id}>
             <div>
                 <h2>{recipe.name}</h2>
-                <button onClick={() => saveRecipe(recipe._id)}>Save</button>
+                <button 
+                onClick={() => saveRecipe(recipe._id)}
+                disabled={isRecipeSaved(recipe._id)}>
+                Save
+                </button>
             </div>
             <div>
                 <img src={recipe.imageUrl} alt={recipe.name} />
