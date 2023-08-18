@@ -24,15 +24,11 @@ router.post('/login', async (req, res) => {
   const user = await UserModel.findOne({ username });
 
   if (!user) {
-    return res
-      .status(400)
-      .json({ message: 'Username or password is incorrect' });
+    return res.json({ message: 'Username or password is incorrect' });
   }
   const isPasswordValid = await bcrypt.compare(password, user.password);
   if (!isPasswordValid) {
-    return res
-      .status(400)
-      .json({ message: 'Username or password is incorrect' });
+    return res.json({ message: 'Username or password is incorrect' });
   }
   const token = jwt.sign({ id: user._id }, 'secret');
   res.json({ token, userID: user._id });
@@ -41,9 +37,9 @@ router.post('/login', async (req, res) => {
 export { router as userRouter };
 
 export const verifyToken = (req, res, next) => {
-  const authHeader = req.headers.authorization;
-  if (authHeader) {
-    jwt.verify(authHeader, 'secret', (e) => {
+  const token = req.headers.authorization;
+  if (token) {
+    jwt.verify(token, 'secret', (e) => {
       if (e) {
         return res.sendStatus(403);
       }

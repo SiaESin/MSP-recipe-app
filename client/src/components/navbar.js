@@ -1,4 +1,4 @@
-import { Link, Navigate, useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useCookies } from 'react-cookie';
 
 export const Navbar = () => {
@@ -14,11 +14,13 @@ export const Navbar = () => {
         <div className='navbar'>
             <Link to='/'> Home </Link>
             <Link to='/create-recipes'>Create Recipes</Link> 
-            <Link to='/saved-recipes'>Saved Recipes</Link>
+            
             {!cookies.access_token ? (
             <Link to='/auth'> Login/Register</Link>
             ) : (
-            <button onClick={logout}>Logout</button>
+            <>
+            <Link to='/saved-recipes'>Saved Recipes</Link>
+            <button onClick={logout}>Logout</button></>
             )}
         </div>
 
