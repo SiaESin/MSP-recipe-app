@@ -1,20 +1,4 @@
 {
-<<<<<<< HEAD
-  "name": "server",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "type": "module",
-  "devDependencies": {
-    "nodemon": "^3.0.1"
-  },
-  "dependencies": {
-    "bcrypt": "^5.1.0",
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "jsonwebtoken": "^9.0.1",
-    "mongoose": "^7.4.3"
-=======
   "name": "msp-recipe-app",
   "version": "1.0.0",
   "description": "Milestone project 2",
@@ -40,10 +24,10 @@
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "express-react-views": "^0.11.0",
     "jsonwebtoken": "^9.0.1",
     "method": "^2.0.0",
     "mongoose": "^7.4.2",
     "yarn": "^1.22.19"
->>>>>>> main
   }
 }

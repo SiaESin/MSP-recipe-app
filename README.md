@@ -1,28 +1,38 @@
 # MSP-recipe-app
-Milestone project 2
+Milestone project 2:
+Recipe app 
 
-READ.ME
-- Name of the app
-Recipe App(change later)
+## Deployment
+The web app is deployed at: https://github.com/SiaESin/MSP-recipe-app
 
-- Group Members
-Siabhon Sindab
-Marisol Valenzuela
-Juan Hernandez
-Matt Foster
 
-- inspiration and/or explain the app (1-3 lines)
+## Project Description
+-
+-
+-
 
-- How to use the app
+## How to use it 
 
-- List the technologies
- MongoDB, Express.js, React, Node.js, Heroku
 
-- Outstanding bugs and/or unfinished functionality
-
-- Links to anything project related
-
+### Technologies
+MongoDB, Express.js, React, Node.js, Heroku
 new dependencies 
 axios, bcrypt, jsonwebtoken, yarn 
 program- insomnia 
 react hooks used
+
+
+### Outstanding Bugs
+-
+-
+-
+## Contributors
+Siabhon Sindab,
+Marisol Valenzuela,
+Juan Hernandez,
+Matt Foster
+
+## Links
+Figma Wireframe: https://www.figma.com/file/dYa99la53iwOAEIiLTqG55/MERN-Recipe-App?type=whiteboard&node-id=0%3A1&t=R9CSt7GrQ5WJxopO-1 
+Milestone project 2
+

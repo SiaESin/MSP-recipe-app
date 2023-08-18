@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { useCookies } from 'react-cookie';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from "react";
+import axios from "axios";
+import { useCookies } from "react-cookie";
+import { useNavigate } from "react-router-dom";
 
 export const Auth = () => {
   return (
-    <div className='auth'>
+    <div className="auth">
       <Login />
       <Register />
     </div>
