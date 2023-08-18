@@ -57,5 +57,16 @@ router.get('/savedRecipes/:userID', async (req, res) => {
   }
 })
 
+router.delete('/savedRecipes/:userID', async (req, res) => {
+  try {
+      const user = await UserModel.findByIdAndDelete(req.params.userID)
+      const savedRecipes = await RecipeModel.find({
+        _id: { $in: user.savedRecipes },
+      })
+      res.json({ savedRecipes })
+  } catch (e) {
+      res.json(e)
+  }
+})
 
 export { router as recipesRouter };

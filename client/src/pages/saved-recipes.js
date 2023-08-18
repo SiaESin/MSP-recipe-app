@@ -21,18 +21,20 @@ export const SavedRecipes = () => {
     fetchSavedRecipe();
   }, []);
 
+  const isRecipeSaved = (id) => savedRecipes.includes(id);
+
   return <div> <h1> Saved Recipes</h1>
   <ul>
     {savedRecipes.map((recipe) => (
         <li key={recipe._id}>
             <div>
                 <h2>{recipe.name}</h2>
-                {/* <button 
+                <button 
                 onClick={() => saveRecipe(recipe._id)}
                 disabled={isRecipeSaved(recipe._id)}>
                 {isRecipeSaved(recipe._id) ? "SAVED" : "Save"}
                 </button> 
-                Removing from saved recipes/delete?? */}
+                Removing from saved recipes/delete??
             </div>
             <div>
                 <img src={recipe.imageUrl} alt={recipe.name} />
