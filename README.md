@@ -7,7 +7,7 @@ The web app is deployed at: https://github.com/SiaESin/MSP-recipe-app
 
 
 ## Project Description
--
+- inspired by https://github.com/machadop1407/MERN-Recipe-App 
 -
 -
 

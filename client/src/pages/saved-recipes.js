@@ -40,6 +40,9 @@ export const SavedRecipes = () => {
                 <img src={recipe.imageUrl} alt={recipe.name} />
                 <p> Cooking Time: {recipe.cookingTime} (minutes)</p>
             </div>
+            <div className='Ingredients'>
+                <p>{recipe.ingredients}</p>
+            </div>
             <div className='instructions'>
                 <p>{recipe.instructions}</p>
             </div>
