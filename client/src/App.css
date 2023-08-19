@@ -1,6 +1,10 @@
 
 .App {
-  text-align: center;
+  background-image: linear-gradient( #8DB1CE, #DADFF7, #4082A5, #7F8695);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -13,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color:#636363;
+  background-color:#4082A5;
 }
 
 .auth-container {
@@ -22,11 +26,12 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color: white;
-  border-radius: 5px;
+  background-color:#232C33;
+  border-radius: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin: 20px;
   width: 400px;
+  color:#DADFF7;
 }
 
 .form-group {
@@ -42,7 +47,7 @@ label {
 
 input {
   padding: 10px;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 5px;
 }
 
@@ -62,20 +67,25 @@ a {
   color: white;
   text-decoration: none;
   margin: 10px;
-  font-size: 25px;
+  font-size: 30px;
 }
-
+a:hover{
+  color:#4082A5;
+  font-size: 35px;
+}
 .create-recipe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  background-color:  grey;
+  background-color:  #232C33;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin: 20px;
   width: 400px;
+  height: auto;
+  color:#DADFF7;
 }
 .create-recipe form {
   display: flex;
@@ -85,12 +95,27 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 2em;
 }
 
 li {
-  border: 1px solid black;
+  border: 3px solid black;
   padding: 10px;
+  background-color: #347E88;
   margin-bottom: 10px;
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img:hover {
+  width: 700px;
+  }
+
+p:hover {
+  font-size: 25px;
 }
 
 h2 {
@@ -104,10 +129,24 @@ img {
 }
 
 img {
-  width: 400px;
+  width: 550px;
 }
 
 p {
   max-width: 400px;
-  font-size: 12px;
+  font-size: 20px;
+}
+
+.instructions {
+  font-size: 18px;
+}
+
+.logout {
+  font-weight: bold;
+  background-color: #287A6A;
+}
+
+.save {
+  color: #DADFF7;
+  background-color: #0D0630;
 }
