@@ -1,10 +1,15 @@
+* {
 
+}
 .App {
   background-image: linear-gradient( #8DB1CE, #DADFF7, #4082A5, #7F8695);
+  background: url(https://cdn.pixabay.com/photo/2017/11/26/00/09/vegetables-2977888_1280.jpg) fixed;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 body {
@@ -17,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color:#4082A5;
+  
 }
 
 .auth-container {
@@ -27,6 +32,7 @@ body {
   align-items: center;
   padding: 20px;
   background-color:#232C33;
+  opacity: 0.9;
   border-radius: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   margin: 20px;
@@ -102,6 +108,7 @@ li {
   border: 3px solid black;
   padding: 10px;
   background-color: #347E88;
+  opacity: 0.85;
   margin-bottom: 10px;
   width: 700px;
   display: flex;
@@ -109,6 +116,7 @@ li {
   justify-content: center;
   align-items: center;
 }
+
 
 img:hover {
   width: 700px;
@@ -120,6 +128,9 @@ p:hover {
 
 h2 {
   margin-top: 0;
+}
+h1 {
+  color:#DADFF7
 }
 
 img {
@@ -150,3 +161,4 @@ p {
   color: #DADFF7;
   background-color: #0D0630;
 }
+
